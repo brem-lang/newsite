@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/newsite/public_html/
-    - /bin/rsync -a --exclude='.git' --exclude='.cpanel.yml' --exclude='.DS_Store' --exclude='README.md' --exclude='dummy.html' --exclude='jg.html' ./ $DEPLOYPATH
+    - /bin/rsync -rlt --exclude='.git' --exclude='.cpanel.yml' --exclude='.DS_Store' --exclude='README.md' --exclude='dummy.html' --exclude='jg.html' ./ $DEPLOYPATH
